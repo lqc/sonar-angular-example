@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Foo, Bar } from './helper';
+import { help } from './helper2';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sonar-angular-example';
+
+  constructor() {
+    help();
+  }
 }
