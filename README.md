@@ -2,4 +2,9 @@
 
 Example Angular project with SonarQube configuration.
 
-The SonarTS scanner uses an LCOV report for code coverage.
+To get both code analysis and coverage, first run:
+
+```
+ng test --watch false --source-map true --code-coverage
+sonar-scanner -Dsonar.login=*
+```
